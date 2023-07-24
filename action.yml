@@ -1,6 +1,12 @@
 name: "GitHub Issues to Azure DevOps"
 description: "This action will Sync your GitHub Issue to Azure Boards when an Issue is created or updated"
-author: "v-selvaraj"
+author: "danhellem"
+branding:
+  icon: "book-open"
+  color: "green"
 outputs:
   id:
     description: "id of work item created"
+runs:
+  using: "node16"
+  main: "index.js"
