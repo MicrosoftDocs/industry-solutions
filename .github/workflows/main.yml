@@ -23,6 +23,6 @@ jobs:
           ado_active_state: "Active"
           ado_close_state: "Closed"
           ado_bypassrules: true
-          ado_assignedTo: "v-selvaraj@microsoft.com"
+          "assignedTo": "goral@microsoft.com"
           log_level: 100
           ado_priority: 3
