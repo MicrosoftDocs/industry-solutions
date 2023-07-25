@@ -181,12 +181,12 @@ async function create(vm) {
     },	 
 	   {
       op: "add",
-      path: "/fields/Custom.HowFound",
+      path: "/fields/System.HowFound",
       value: "Feedback"
     },
 	    {
       op: "add",
-      path: "/fields/Custom.BugIssueType",
+      path: "/fields/System.BugIssueType",
       value: "Other Issue"
     },
     {
