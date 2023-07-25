@@ -184,6 +184,11 @@ async function create(vm) {
       path: "/fields/CRMAgile.BugIssueType",
       value: "Other Issue"
     },
+   {
+      op: "add",
+      path: "/fields/CRMAgile.HowFoundCategory",
+      value: "Feedback"
+    },
     {
       op: "add",
       path: "/relations/-",
