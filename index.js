@@ -184,6 +184,11 @@ async function create(vm) {
       path: "/fields/Custom.HowFound",
       value: "Feedback"
     },
+	    {
+      op: "add",
+      path: "/fields/Custom.How Found_",
+      value: "Feedback"
+    },
     {
       op: "add",
       path: "/relations/-",
