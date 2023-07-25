@@ -110,7 +110,8 @@ async function main() {
       case "reopened":
         workItem != null ? await reopened(vm, workItem) : "";
         break;
-      case "assigned":	    
+      case "assigned":
+	workItem != null ? await label(vm, workItem) : "";
         console.log("assigned action is not yet implemented");
         break;
       case "labeled":
@@ -170,6 +171,11 @@ async function create(vm) {
       op: "add",
       path: "/fields/System.Tags",
       value: "GitHub Issue; " + vm.repo_name
+    },
+    {
+      op: "add",
+      path: "/fields/System.AssignedTo",
+      value: "v-selvarajd@microsoft.com"
     },
     {
       op: "add",
