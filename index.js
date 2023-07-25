@@ -179,12 +179,7 @@ async function create(vm) {
       path: "/fields/System.AssignedTo",
       value: "v-selvarajd@microsoft.com"
     },	 
-	   {
-      op: "add",
-      path: "/fields/System.HowFound",
-      value: "Feedback"
-    },
-	    {
+   {
       op: "add",
       path: "/fields/System.BugIssueType",
       value: "Other Issue"
