@@ -181,7 +181,7 @@ async function create(vm) {
     },	 
    {
       op: "add",
-      path: "/fields/System.BugIssueType",
+      path: "/fields/CRMAgile.BugIssueType",
       value: "Other Issue"
     },
     {
