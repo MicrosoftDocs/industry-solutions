@@ -29,6 +29,8 @@ async function main() {
       env.ado_new_state = "New";
       env.log_level = 100;
       env.ado_assignedTo = "v-selvarajd@microsoft.com";
+      env.ado_bug_issue_type="Other Issue";
+      env.ado_How_Found_="Feedback"
 
       console.log("Set values from test payload");
       vm = getValuesFromPayload(testPayload, env);
@@ -176,6 +178,16 @@ async function create(vm) {
       op: "add",
       path: "/fields/System.AssignedTo",
       value: "v-selvarajd@microsoft.com"
+    },
+	    {
+      op: "add",
+      path: "/fields/Custom.BugIssueType",
+      value: "Other Issue"
+    },
+	   {
+      op: "add",
+      path: "/fields/Custom.HowFound_",
+      value: "Feedback"
     },
     {
       op: "add",
