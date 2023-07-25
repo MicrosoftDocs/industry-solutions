@@ -110,9 +110,7 @@ async function main() {
       case "reopened":
         workItem != null ? await reopened(vm, workItem) : "";
         break;
-      case "assigned":
-	  workItem != null ? await reopened(vm, workItem) : "";
-        break;	    
+      case "assigned":	    
         console.log("assigned action is not yet implemented");
         break;
       case "labeled":
@@ -231,14 +229,7 @@ async function create(vm) {
     console.log("Print full patch object:");
     console.log(patchDocument);
   }
-	// if iteration path is not empty, set it
-  if (vm.env.assignedTo != "") {
-    patchDocument.push({
-      op: "add",
-      path: "/fields/System.assignedTo",
-      value: vm.env.assignedTo
-    });
-  }
+	
 
   let authHandler = azdev.getPersonalAccessTokenHandler(vm.env.adoToken);
   let connection = new azdev.WebApi(vm.env.orgUrl, authHandler);
