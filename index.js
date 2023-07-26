@@ -220,7 +220,7 @@ async function create(vm) {
   ];
 
   // if area path is not empty, set it
-  if (vm.env.areaPath = "") {
+  if (vm.env.areaPath != "Solutions") {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
