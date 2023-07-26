@@ -216,16 +216,11 @@ async function create(vm) {
       op: "add",
       path: "/fields/Microsoft.VSTS.Common.BacklogPriority",
       value: 1
-    },
-    {
-      op: "add",
-      path: "/fields/System.AreaPath",
-      value: "Solutions\Industry WAI"
-    } 
+    }
   ];
 
   // if area path is not empty, set it
-  if (vm.env.areaPath != "") {
+  if (vm.env.areaPath = "") {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
