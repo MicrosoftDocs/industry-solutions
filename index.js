@@ -225,7 +225,7 @@ async function create(vm) {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
-      value: "Solutions\\Test Drive"
+      value: "Solutions\\Industry WAI"
     });
   }
 
