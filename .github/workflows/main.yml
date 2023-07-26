@@ -26,3 +26,4 @@ jobs:
           "assignedTo": "goral@microsoft.com"
           log_level: 100
           ado_priority: 3
+          ado_areapath: "Solutions/WAI Online"
