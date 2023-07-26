@@ -220,11 +220,11 @@ async function create(vm) {
   ];
 
   // if area path is not empty, set it
-  if (vm.env.areaPath != "Solutions") {
+  if (vm.env.areaPath ! = " ") {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
-      value: "Solutions\Industry WAI"
+      value: vm.env.areapath
     });
   }
 
