@@ -172,7 +172,7 @@ async function create(vm) {
     {
       op: "add",
       path: "/fields/System.Tags",
-      value: "GitHub Issue; " + vm.repo_name
+      value: "GitHub Issue; " + vm.repo_name +"WAI Online"
     },
     {
       op: "add",
@@ -206,6 +206,11 @@ async function create(vm) {
       op: "add",
       path: "/fields/Microsoft.VSTS.Common.StackRank",
       value: 1
+    },
+    {
+      op: "add",
+      path: "/fields/Microsoft.VSTS.Common.Priority",
+      value: 3
     },
     {
       op: "add",
