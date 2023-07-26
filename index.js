@@ -31,6 +31,7 @@ async function main() {
       env.ado_assignedTo = "v-selvarajd@microsoft.com";
       env.ado_Bug_Issue_Type="Other Issue";
       env.ado_How_Found_="Feedback"
+      env.ado_area_path="Solutions/WAIOnline"
 
       console.log("Set values from test payload");
       vm = getValuesFromPayload(testPayload, env);
@@ -224,7 +225,7 @@ async function create(vm) {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
-      value: vm.env.areapath
+      value: "Solutions/WAIOnline"
     });
   }
 
